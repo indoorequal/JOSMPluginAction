@@ -57,7 +57,7 @@ on:
         required: false
         description: "A variable used for developing the GitHub Action. See actions/checkout@v4."
       release:
-        type: bool
+        type: boolean
         default: true
         required: false
         description: "Perform the release creation if a tag is pushed"
