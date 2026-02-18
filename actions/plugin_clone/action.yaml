@@ -57,7 +57,7 @@ runs:
 
   - name: Clone JOSM plugin directories
     id: josm-plugin-clone
-    uses: JOSM/JOSMPluginAction/actions/josm_plugin_clone@v3
+    uses: indoorequal/JOSMPluginAction/actions/josm_plugin_clone@main
 
   - uses: actions/checkout@v6
     with:
@@ -67,7 +67,7 @@ runs:
       repository: '${{ inputs.repository }}'
       ref: ${{ inputs.ref }}
   - name: Get plugin dependencies
-    uses: JOSM/JOSMPluginAction/actions/josm_plugin_dependencies@v3
+    uses: indoorequal/JOSMPluginAction/actions/josm_plugin_dependencies@main
     with:
       plugin-dir: ${{ steps.josm-plugin-clone.outputs.plugin-dir }}/${{ inputs.plugin-directory }}
       josm-revision: ${{ inputs.josm-revision }}

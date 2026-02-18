@@ -18,7 +18,7 @@ permissions:
 
 jobs:
   call-workflow-latest:
-    uses: JOSM/JOSMPluginAction/.github/workflows/internal_ant.yml@main
+    uses: indoorequal/JOSMPluginAction/.github/workflows/internal_ant.yml@main
     with:
       josm-revision: ""
       java-version: 17
@@ -27,7 +27,7 @@ jobs:
       plugin-directory: 'Mapillary'
       plugin-jar-name: 'Mapillary'
   call-workflow-min:
-    uses: JOSM/JOSMPluginAction/.github/workflows/internal_ant.yml@main
+    uses: indoorequal/JOSMPluginAction/.github/workflows/internal_ant.yml@main
     with:
       josm-revision: "r19387"
       java-version: 17
