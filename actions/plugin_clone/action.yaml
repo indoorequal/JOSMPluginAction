@@ -59,7 +59,7 @@ runs:
     id: josm-plugin-clone
     uses: JOSM/JOSMPluginAction/actions/josm_plugin_clone@v3
 
-  - uses: actions/checkout@v4
+  - uses: actions/checkout@v6
     with:
       path: ${{ steps.josm-plugin-clone.outputs.plugin-dir }}/${{ inputs.plugin-directory }}
       fetch-depth: ${{ inputs.fetch-depth }}
